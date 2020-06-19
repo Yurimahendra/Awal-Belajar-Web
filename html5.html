@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar html5</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: verdana, sans-serif;
+                font-size: 12px;
+            }
+            header, nav, main, aside, footer {
+                border: 1px solid grey; margin: 5px; padding: 5px;
+            }
+            main {
+                float: left;
+                width: 60%;
+            }
+            aside {
+                float: left;
+                width: 30%;
+            }
+            footer {
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Belajar pemrograman</h1>
+            <h2>Bersama sekolah koding</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="html5.html">Home</a></li>
+                <li><a href="Belajar.html">belajar html</a></li>
+                <li><a href="kontak/kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <article>
+                <form>
+                    <input type="search" name="search" placeholder="cari">
+                    <input type="email" name="email" placeholder="email" required>
+                    <input name="stardate" min="2012-01-01" max="2018-30-12" type="date">
+                    <input type="color" >
+                    <input type="submit">
+                </form>
+                <figure>
+                    <img src="gambar/Teknik.jpg" alt="teknik informatika" width="100" height="50">
+                    <figcaption>gambar teknik informatika dari sang pencipta</figcaption>
+                </figure>
+
+                <dialog open> 
+                    ini web tutorial html
+                </dialog>
+
+                <details>
+                    <summary>info belajar html</summary>
+                    <p>selamat datang diwebsite</p>
+                </details>
+
+                <h1>Daftar pelajaran</h1>
+
+                <section>
+                    <h2>HTML</h2>
+                    <p>Membuat struktur website menggunakan html</p>
+                </section>
+
+                <section>
+                    <h2>CSS</h2>
+                    <p>Menghias website dengan css</p>
+                </section>
+
+                <section>
+                    <h2>Javascript</h2>
+                    <p>Membuat website lebih interaktif dengan js</p>
+                </section>
+            </article>
+
+        </main>
+
+        <aside>
+            <h2>Daftar artikel</h2>
+            <a href="#">Intro html</a> <br>
+            <a href="#">Mulai belajar Website</a> <br>
+            <a href="#">Berguru sampai negeri koding</a> <br>
+        </aside>
+
+        <footer>
+            <p>&copy; Yuri</p>
+        </footer>
+
+    </body>
+</html>

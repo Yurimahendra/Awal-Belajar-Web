@@ -1,0 +1,69 @@
+
+
+
+<h1>css tips</h1>
+<div id="kaos">
+    <img src="gambar/images.jpeg" alt="Tshirt">
+    <div id="info">
+        <p>baju mantap <span>50000,-Rp</span></p>
+        <a href="">Belanja</a>
+    </div>
+</div>
+
+<style media="screen">
+    body{
+        margin: 15% 15%;
+        font-family: sans-serif;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    a:hover{
+        background-color: white;
+        color: black;
+    }
+
+    #kaos{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #kaos #info{
+        display: none;
+    
+    }
+
+    #kaos:hover #info{
+        display: block;
+    }
+
+    #kaos img{
+        width: 100%;
+        height: auto;
+    }
+
+    #info{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 30%;
+        top: 0%;
+        color: white;
+    }
+
+    #info span{
+        display: block;
+    }
+</style>

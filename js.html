@@ -1,0 +1,129 @@
+<!dOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar JavaScript</title>
+        <style>
+            #urap{
+                background: green;
+                color: black;
+                font-size: 25px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="gambar/logojs.png" alt="JS" width="300px" height="300px">
+        <div id="urap"></div>
+        <div id="anyar"></div>
+        <div id="iya"></div>
+        <div id="parameterr"></div>
+        <div id="retun"></div>
+        <div id="array"></div>
+        <div id="bolan"></div>
+        <div id="percabangan"></div>
+        <div id="loop"></div>
+        <script>
+
+            var programer = 10000;
+            var designer = 5000;
+            var barang = 6000;
+            /*if(programer == barang){
+                document.getElementById("bolan").innerHTML = "transaksi berhasil!";
+            }else if(designer == barang){
+                document.getElementById("percabangan").innerHTML = "transaksi berhasil";
+            }else if(programer > barang){
+                alert("uang programmer lebih besar dari barang");
+            }else{
+                alert("uang yang anda masukan kurang!");
+            }*/
+            /*if(programer > barang){
+                if(programer > barang*2){
+                    alert("bisa membeli dua barang")
+                }else{
+                alert("hanya bisa membeli satu barang")
+            }
+            
+            }
+           */
+            /*for( var i=0; i<5; i++){
+                document.getElementById("loop").innerHTML = i;
+                //alert(i);
+            }
+            */
+            /*var nama = "Yuri Mahendra";
+            switch(nama){
+                case "endy":
+                    alert('namanya adalah endy');
+                    break;
+                case "tiqo":
+                    alert('namanya adalah tiqo');
+                    break;
+                case "joni":
+                    alert('namanya adalah joni');
+                    break;
+                case "Yuri Mahendra":
+                    alert('namanya adalah yuri mahendra');
+                    break;
+                default:
+                    alert('tidak ada yang cocok');
+            }*/
+            
+            var i = 0;
+            var texxt = "";
+
+            while( i < 5){
+                texxt += "<br> angkanya adalah " + i;
+                i++;   
+            }
+            document.getElementById("percabangan").innerHTML = texxt;
+
+
+            var namajakwir = [" yuri", " mahendra"];
+            var namajakwir1 = [" samroni", " anton"];
+            var namajakwir2 = [" zihan"];
+            var totalnama = namajakwir.concat(namajakwir1, namajakwir2);
+            document.getElementById("array").innerHTML =totalnama.join(" | ");
+
+            function retrun(a, b){
+                
+                return a+b;
+            }
+            retrun();
+            var teks = retrun("sekolah", " koding") + " Paling anyar";
+            document.getElementById("retun").innerHTML = teks;
+
+            function parameter(nama){
+                var text = nama + " yang baru";
+                document.getElementById("parameterr").innerHTML = text;
+            }
+            parameter("Parakilo");
+
+            function metod_string(){
+                var nama = "120";
+                var hasil = parseInt(nama);
+                document.getElementById("iya").innerHTML = hasil;
+            }
+            metod_string();
+            
+            function tipedata(){
+                var text = "hello friend";
+                var angka = 879.878678678;
+                var angka2 = 1500;
+                var angkabaru = Math.max(angka, angka2);
+                document.getElementById("anyar").innerHTML = angkabaru;
+            }
+            tipedata();
+            
+            function caraprint(){
+                var x = "SEKOLAH KODING";
+               // alert("SELAMAT DATANG!");
+                document.getElementById("urap").innerHTML = x;
+            }
+            caraprint();
+            
+           
+        </script>
+    </body>
+</html>

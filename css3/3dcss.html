@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar css3</title>
+        <style>
+            body{
+                margin-left: 50px;
+            }
+            div{
+                width: 100px; height: 100px; margin-bottom: 5px;
+            }
+            #div0, #div4{
+                perspective: 100px;
+                perspective-origin: 60% 10%;
+            }
+            #div1{
+                background: blue;
+                transform: rotateX(50deg);
+            }
+            #div2{
+                perspective: 400px;
+            }
+            #div3{
+                background:teal;
+                transform: translateZ(5px) rotateZ(25deg);
+                transition: transform 2s;
+            }
+            #div3:hover{
+                transform: translateZ(20px) rotateZ(55deg);
+            }
+            #div5{
+                background: red;
+                transform: scaleZ(1) rotateY(45deg);
+                transition: transform 2s;
+            }
+            #div5:hover{
+                transform: scaleZ(1.5) rotateY(45deg);
+            }
+            #div6{
+                background:aqua;
+                transform: scaleX(1) rotateY(45deg);
+                transition: transform 2s;
+            }
+            #div6:hover{
+                transform: scaleX(1.5) rotateY(45deg);
+            }
+            #box{
+                perspective: 500px;
+            }
+            #card{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                transition: transform 2s;
+                transform-style: preserve-3d;
+            }
+           
+            #ngarep, #mburi{
+                position:absolute;
+                top: 0px;
+                left: 0px;
+                width: 200px;
+                height: 200px;
+                backface-visibility: hidden;
+            }
+            #ngarep{
+                background: red;
+            }
+            #mburi{
+                transform: rotateY(180deg);
+                background:yellow;
+            }
+            #card:hover{
+                transform: rotateY(180deg);
+            }
+            #fc{
+                margin-top: 200px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>perspective</h1>
+        <div id="div0">
+            <div id="div1"></div>
+        </div>
+
+        <h1>translate and rotate</h1>
+        <div id="div2">
+            <div id="div3"></div>
+        </div>
+
+        <h1>Scale</h1>
+        <div id="div4">
+            <div id="div5">scale z</div>
+            <div id="div6">scale x</div>
+        </div>
+
+        <h1 id="fc">flip card</h1>
+        <div id="box">
+            <div id="card">
+                <div id="ngarep">ngarep cuy</div>
+                <div id="mburi">mburi cuy</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>indek 3</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+           
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo " >Sekolah Koding</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons ">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li ><a href="#" >HTML</a></li>
+                        <li ><a href="#" >CSS</a></li>
+                        <li ><a href="#" >JavaScript</a></li>
+                        <li><a href="#" class="dropdown-trigger" data-target="dropdown1">Dropdown <i class="material-icons right">keyboard_arrow_down</i></a></li>
+                    </ul>
+                    
+                    <ul class="sidenav" id="mobile-demo">
+                        <li ><a href="#">HTML</a></li>
+                        <li ><a href="#">CSS</a></li>
+                        <li ><a href="#">JavaScript</a></li>
+                        <li><a href="#">Dropdown <i class="material-icons right">keyboard_arrow_down</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <img src="../Material2/penguin-character.png" alt="">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+            $(document).ready(function(){
+                $(".dropdown-trigger").dropdown();
+            });
+               
+        </script>
+        
+    </body>
+</html>
